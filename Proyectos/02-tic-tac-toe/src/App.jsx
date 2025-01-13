@@ -1,13 +1,10 @@
 import { useState, useEffect } from 'react'
 import confetti from 'canvas-confetti'
 import { Square } from './components/Square.jsx'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { TURNS } from './constants.js'
 import { checkWinner, checkEndGame } from './logic/board.js'
 import { WinnerModal } from './components/WinnerModal.jsx'
-import { WINNER_COMBOS } from './constants.js'
 import { saveGameToStorage, resetGameStorage } from './logic/storage/index.js'
 
 function App(){
